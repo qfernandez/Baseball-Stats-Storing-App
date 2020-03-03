@@ -1,13 +1,77 @@
-# Baseball-Stats-Storing-App
+# Baseball Stats Storing App
 
-This is a Baseball Statistics Storing Application meant for Little League teams to keep track of individual player statistics. 
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
 
-Time Spent: .5 Hours spent so far
+## Overview
+### Description
+[Description of your app]
 
-## User Stories
+### App Evaluation
+[Evaluation of your app across the following attributes]
+- **Category:**
+- **Mobile:**
+- **Story:**
+- **Market:**
+- **Habit:**
+- **Scope:**
 
-## Video Walkthrough
+## Product Spec
 
-## APIS
+### 1. User Stories (Required and Optional)
 
-MLB Stats API https://appac.github.io/mlb-data-api-docs/#team-data-list-teams-get
+**Required Must-have Stories**
+
+* [fill in your required user stories here]
+* ...
+
+**Optional Nice-to-have Stories**
+
+* [fill in your required user stories here]
+* ...
+
+### 2. Screen Archetypes
+
+* [list first screen here]
+   * [list associated required story here]
+   * ...
+* [list second screen here]
+   * [list associated required story here]
+   * ...
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+* [fill out your first tab]
+* [fill out your second tab]
+* [fill out your third tab]
+
+**Flow Navigation** (Screen to Screen)
+
+* [list first screen here]
+   * [list screen navigation here]
+   * ...
+* [list second screen here]
+   * [list screen navigation here]
+   * ...
+
+## Wireframes
+[Add picture of your hand sketched wireframes in this section]
+<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+### [BONUS] Digital Wireframes & Mockups
+
+### [BONUS] Interactive Prototype
+
+## Schema 
+[This section will be completed in Unit 9]
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
