@@ -7,3 +7,7 @@ Time Spent: .5 Hours spent so far
 ## User Stories
 
 ## Video Walkthrough
+
+## APIS
+
+MLB Stats API https://appac.github.io/mlb-data-api-docs/#team-data-list-teams-get
