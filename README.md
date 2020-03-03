@@ -1,0 +1,5 @@
+# Baseball-Stats-Storing-App
+
+This is a Baseball Statistics Storing Application meant for Little League teams to keep track of individual player statistics. 
+
+Time Spent: .5 Hours spent so far
