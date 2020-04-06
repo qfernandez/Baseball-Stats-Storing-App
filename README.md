@@ -50,7 +50,7 @@ User sorts players on team home page.
 
 * Home Page
 * Team Overview Page
-* Player Overview Page
+* Manage Teams
 
 
 **Flow Navigation** (Screen to Screen)
