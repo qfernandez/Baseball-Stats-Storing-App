@@ -1,4 +1,4 @@
-# Baseball Stats Storing App
+# Catching Sabermetrics
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -8,30 +8,30 @@
 
 ## Overview
 ### Description
-[Description of your app]
+Understanding the physics that take place within baseball poses as a challenge to new baseball fans. Catching Sabermetrics will store and compute imputed baseball statistics to help new baseball fans learn the logistics behind baseball. It includes visual analytics that help translate data into interactive graphs. This software has the potential to be used to manage a multitude of teams such as MLB teams, fantasy teams, and personal coached teams.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Sports
+- **Mobile:** This application will be developed for mobile use but would be just as viable on a computer. Functionality wouldn’t be limited to mobile devices, however a mobile version would have easier access. 
+- **Story:** A user can mange different teams by adding, deleting, and updating players. The user can then view analytics based on their inputted data.
+- **Market:** This app can be used by anyone, both new and old baseball fans.
+- **Habit:** This app can be used as often or unoften as the user wanted depending on how frequently they update their teams.
+- **Scope:** First there will be an introduction to sabermetrics to the user. The users can then manage the players they wish to input statistics for.
 
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
-* [fill in your required user stories here]
-* ...
+User views a team's players with the ability to select a player.
+User adds a player to a team.
+User can search for a player from a team.
+User deletes a player from a team.
+User updates a players statistics.\
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+sort players
 
 ### 2. Screen Archetypes
 
