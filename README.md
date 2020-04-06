@@ -23,41 +23,48 @@ Understanding the physics that take place within baseball poses as a challenge t
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-User views a team's players with the ability to select a player.
-User adds a player to a team.
+
+User sees a home page that displays teams.
+User views a team's players on the team home page with the ability to select a player.
+User adds a new team by adding a new player.
 User can search for a player from a team.
 User deletes a player from a team.
-User updates a players statistics.\
+User updates a players statistics. 
 
 **Optional Nice-to-have Stories**
 
-sort players
+User sorts players on team home page.
 
 ### 2. Screen Archetypes
-
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Home Page - screen to select a team
+  * Upon selecting a team opens
+* Team page - displays all players with their rank and an option to search for a player.
+  * Upon selecting a player opens
+* Player page - displays interactive analytics based on inputted player statistics.
+* Manage team - screen displaying add, update, and delete options for players.
+  * Upon selecting a choice, redirects user to a page to make the changes.
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home Page
+* Team Overview Page
+* Player Overview Page
+
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Home Page
+   * Team Overview Page
+   * Manage Teams
+* Team Overview Page
+   * Player Overview page
+   * Search for Player
+* Manage Teams
+   * Update Player
+   * Delete Player
+   * Add Player
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
