@@ -75,10 +75,25 @@ User sorts players on team home page.
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | createdAt     | DateTime | date when player was added (default field) |
+   | updatedAt     | DateTime | date when player was last updated (default field) |
+   | firstName     | String   | first name of player |
+   | lastName      | String   | last name of player |
+   | Team          | String   | team of player |
+   | Position      | Number   | position that the player plays |
+
+
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+* Manage Players
+* (Create/POST) Create a new player
+* (Delete) Delete existing player
+* (Update/PUT) Update player statistics
+* Team Overview Screen
+* (Read/GET) Displaying Team Players
+* Player Overview Screen
+* (Read/GET) Displaying Players Stats
