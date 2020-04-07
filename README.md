@@ -24,12 +24,12 @@ Understanding the physics that take place within baseball poses as a challenge t
 
 **Required Must-have Stories**
 
-User sees a home page that displays teams.
-User views a team's players on the team home page with the ability to select a player.
-User adds a new team by adding a new player.
-User can search for a player from a team.
-User deletes a player from a team.
-User updates a players statistics. 
+* User sees a home page that displays teams.
+* User views a team's players on the team home page with the ability to select a player.
+* User adds a new team by adding a new player.
+* User can search for a player from a team.
+* User deletes a player from a team.
+* User updates a players statistics. 
 
 **Optional Nice-to-have Stories**
 
