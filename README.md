@@ -75,6 +75,10 @@ User sorts players on team home page.
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+
+
+
+### Models
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user post (default field) |
@@ -84,10 +88,6 @@ User sorts players on team home page.
    | lastName      | String   | last name of player |
    | Team          | String   | team of player |
    | Position      | Number   | position that the player plays |
-
-
-### Models
-[Add table of models]
 ### Networking
 * Manage Players
 * (Create/POST) Create a new player
