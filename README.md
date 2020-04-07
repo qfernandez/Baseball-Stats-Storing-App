@@ -67,8 +67,7 @@ User sorts players on team home page.
    * Add Player
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="https://imgur.com/gJMIjx9" width=600>
+<img src="https://i.imgur.com/gJMIjx9.jpg" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
 
