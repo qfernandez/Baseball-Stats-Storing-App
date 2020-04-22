@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-                configuration.applicationId = "MLBStatsApp"
+                configuration.applicationId = "mlbStatsApp"
                 configuration.server = "https://mlbstatsapp.herokuapp.com/parse"
             })
         )
