@@ -24,12 +24,12 @@ Understanding the physics that take place within baseball poses as a challenge t
 
 **Required Must-have Stories**
 
-User sees a home page that displays teams.
-User views a team's players on the team home page with the ability to select a player.
-User adds a new team by adding a new player.
-User can search for a player from a team.
-User deletes a player from a team.
-User updates a players statistics. 
+[x] User sees a home page that displays teams.
+* User views a team's players on the team home page with the ability to select a player.
+* User adds a new team by adding a new player.
+* User can search for a player from a team.
+* User deletes a player from a team.
+* User updates a players statistics. 
 
 **Optional Nice-to-have Stories**
 
@@ -67,18 +67,32 @@ User sorts players on team home page.
    * Add Player
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://i.imgur.com/gJMIjx9.jpg" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
+
+
 ### Models
-[Add table of models]
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | createdAt     | DateTime | date when player was added (default field) |
+   | updatedAt     | DateTime | date when player was last updated (default field) |
+   | firstName     | String   | first name of player |
+   | lastName      | String   | last name of player |
+   | Team          | String   | team of player |
+   | Position      | Number   | position that the player plays |
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+* Manage Players
+* (Create/POST) Create a new player
+* (Delete) Delete existing player
+* (Update/PUT) Update player statistics
+* Team Overview Screen
+* (Read/GET) Displaying Team Players
+* Player Overview Screen
+* (Read/GET) Displaying Players Stats
