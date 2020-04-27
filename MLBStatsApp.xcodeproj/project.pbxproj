@@ -11,7 +11,6 @@
 		84657E3924442B530015433C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84657E3824442B530015433C /* FeedViewController.swift */; };
 		8482112F2443D98000DA5CFE /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482112E2443D98000DA5CFE /* PlayerCell.swift */; };
 		848ABC87244D78E1001BCD58 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ABC86244D78E1001BCD58 /* AddPlayerViewController.swift */; };
-		848ABC8B244D8CA8001BCD58 /* DeletePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ABC8A244D8CA8001BCD58 /* DeletePlayerViewController.swift */; };
 		84A5FDE82438487C00DD237E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FDE72438487C00DD237E /* AppDelegate.swift */; };
 		84A5FDEA2438487C00DD237E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FDE92438487C00DD237E /* SceneDelegate.swift */; };
 		84A5FDEC2438487C00DD237E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FDEB2438487C00DD237E /* ViewController.swift */; };
@@ -20,6 +19,7 @@
 		84A5FDF42438487D00DD237E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A5FDF22438487D00DD237E /* LaunchScreen.storyboard */; };
 		84A5FDFF2438487D00DD237E /* MLBStatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FDFE2438487D00DD237E /* MLBStatsAppTests.swift */; };
 		84A5FE0A2438487E00DD237E /* MLBStatsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FE092438487E00DD237E /* MLBStatsAppUITests.swift */; };
+		84B20107245755BB007B171A /* UpdateStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B20106245755BB007B171A /* UpdateStatsViewController.swift */; };
 		A20F7924EB2EBCFC13C82BE3 /* Pods_MLBStatsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9C19A87945C7407E18DAA /* Pods_MLBStatsAppTests.framework */; };
 		AFB3807618970EFD52CCAD66 /* Pods_MLBStatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44FE26EECE8BA431E2D7F4D /* Pods_MLBStatsApp.framework */; };
 		E629A111B11168022D01B287 /* Pods_MLBStatsApp_MLBStatsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1EA00E9B0521CF6C7EFF44 /* Pods_MLBStatsApp_MLBStatsAppUITests.framework */; };
@@ -51,7 +51,6 @@
 		84657E3824442B530015433C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8482112E2443D98000DA5CFE /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		848ABC86244D78E1001BCD58 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
-		848ABC8A244D8CA8001BCD58 /* DeletePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePlayerViewController.swift; sourceTree = "<group>"; };
 		84A5FDE42438487C00DD237E /* MLBStatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBStatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A5FDE72438487C00DD237E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A5FDE92438487C00DD237E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		84A5FE052438487E00DD237E /* MLBStatsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBStatsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A5FE092438487E00DD237E /* MLBStatsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBStatsAppUITests.swift; sourceTree = "<group>"; };
 		84A5FE0B2438487E00DD237E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B20106245755BB007B171A /* UpdateStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStatsViewController.swift; sourceTree = "<group>"; };
 		AE1EA00E9B0521CF6C7EFF44 /* Pods_MLBStatsApp_MLBStatsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBStatsApp_MLBStatsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE0722A5E1F72AE3A555F8 /* Pods-MLBStatsApp-MLBStatsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBStatsApp-MLBStatsAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MLBStatsApp-MLBStatsAppUITests/Pods-MLBStatsApp-MLBStatsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D2EF8332F8B9097A21AC3E0E /* Pods-MLBStatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBStatsApp.release.xcconfig"; path = "Target Support Files/Pods-MLBStatsApp/Pods-MLBStatsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,8 +136,8 @@
 				8482112E2443D98000DA5CFE /* PlayerCell.swift */,
 				84657E3824442B530015433C /* FeedViewController.swift */,
 				848ABC86244D78E1001BCD58 /* AddPlayerViewController.swift */,
-				848ABC8A244D8CA8001BCD58 /* DeletePlayerViewController.swift */,
 				8417401424500AEB003B0264 /* StatsViewController.swift */,
+				84B20106245755BB007B171A /* UpdateStatsViewController.swift */,
 			);
 			path = MLBStatsApp;
 			sourceTree = "<group>";
@@ -425,8 +425,8 @@
 				8482112F2443D98000DA5CFE /* PlayerCell.swift in Sources */,
 				848ABC87244D78E1001BCD58 /* AddPlayerViewController.swift in Sources */,
 				8417401524500AEB003B0264 /* StatsViewController.swift in Sources */,
+				84B20107245755BB007B171A /* UpdateStatsViewController.swift in Sources */,
 				84A5FDEC2438487C00DD237E /* ViewController.swift in Sources */,
-				848ABC8B244D8CA8001BCD58 /* DeletePlayerViewController.swift in Sources */,
 				84A5FDE82438487C00DD237E /* AppDelegate.swift in Sources */,
 				84657E3924442B530015433C /* FeedViewController.swift in Sources */,
 				84A5FDEA2438487C00DD237E /* SceneDelegate.swift in Sources */,

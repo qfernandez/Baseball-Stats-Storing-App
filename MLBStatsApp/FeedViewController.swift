@@ -62,13 +62,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-//        let cell = sender as! UITableViewCell
-//        let indexPath = tableView.indexPath(for: cell)!
-//        let player = players[indexPath.row] 
-//        
-//        let statsViewController = segue.destination as! StatsViewController
-//        statsViewController.player = player
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let player = players[indexPath.row] 
         
+        let statsViewController = segue.destination as! StatsViewController
+        statsViewController.player = player
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }

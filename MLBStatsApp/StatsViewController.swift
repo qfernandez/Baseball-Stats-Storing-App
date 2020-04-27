@@ -8,42 +8,58 @@
 
 import UIKit
 import Parse
+import Charts
 
-class StatsViewController: UIViewController {
+class StatsViewController: UIViewController, ChartViewDelegate {
     
-    //var player = [String: Any]?.self
+    var player: PFObject!
+    var hitBarChart = BarChartView()
+    
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var teamNameLabel: UILabel!
+    @IBOutlet weak var positionNameLabel: UILabel!
+    @IBOutlet weak var hitsLabel: UILabel!
+    @IBOutlet weak var updateButton: UIButton!
+    
+    var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hitBarChart.delegate = self
         
-//        let query = PFQuery(className: "Players")
-//        query.findObjectsInBackground { (objects, error) in
-//            if error == nil{
-//                //There was no error in the fetch
-//                if let returnedObjects = objects {
-//                    for object in returnedObjects{
-//                        print(object["firstName"] as! String)
-//                    }
-//                }
-//            } else {
-//                print("error")
-//            }
-//        }
-        // Do any additional setup after loading the view.
+        let a = player["Hits"]
         
+        firstNameLabel.text = player["firstName"] as? String
+        lastNameLabel.text = player["lastName"] as? String
+        teamNameLabel.text = player["Team"] as? String
+        positionNameLabel.text = player["Position"] as? String
+        hitsLabel.text = "\(a ?? Int.self)"
+        //print(player["Hits"] ?? Int())
         
-    
     }
     
+    @IBAction func alertButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Hello", message: "Are you sure you wish to delete player?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{ (action) in
+                    print("cancel")
+                }))
+                alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler:{ (action) in
+                    print("deleted")
+                    self.player.deleteInBackground()
+                }))
+                self.present(alert, animated: true)
+    }
+    //MARK: - Navigation
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        //let button = sender as! UIButton
+        let updatePlayer = player
+        
+        let updateStatsViewController = segue.destination as! UpdateStatsViewController
+        updateStatsViewController.updatePlayer = updatePlayer
+        //let button = sender as! UIButton
+        
     }
-    */
-
+    
 }
