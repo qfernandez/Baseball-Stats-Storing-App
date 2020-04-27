@@ -24,12 +24,12 @@ Understanding the physics that take place within baseball poses as a challenge t
 
 **Required Must-have Stories**
 
-[x] User sees a home page that displays teams.
-* User views a team's players on the team home page with the ability to select a player.
-* User adds a new team by adding a new player.
-* User can search for a player from a team.
-* User deletes a player from a team.
+* [x] User sees a home page that displays teams.
+* [x] User views a team's players on the team home page with the ability to select a player.
+* [x] User adds a new team by adding a new player.
+* [x] User deletes a player from a team.
 * User updates a players statistics. 
+* User can search for a player.
 
 **Optional Nice-to-have Stories**
 
@@ -67,11 +67,10 @@ User sorts players on team home page.
    * Add Player
 
 ## Wireframes
-<img src="https://i.imgur.com/gJMIjx9.jpg" width=800><br>
+<img src="https://i.imgur.com/gJMIjx9.jpg" width=800>
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
+### Interactive Prototype
+<img src="http://g.recordit.co/wAoWlpgGhP.gif">
 
 ## Schema 
 
@@ -87,6 +86,15 @@ User sorts players on team home page.
    | lastName      | String   | last name of player |
    | Team          | String   | team of player |
    | Position      | Number   | position that the player plays |
+   | Hits          | Number   | amount of hits made by player |
+   | atBats        | Number   | amount of times battling the pitcher |
+   | homeRuns      | Number   | amount of home runs made by player |
+   | RBI           | Number   | amount of runs batted in |
+   | Wins          | Number   | amount of games a pitcher has won|
+   | inningsPitched| Number   | amount of innings pitched by pitcher |
+   | runsAllowed   | Number   | amount of runs a pitcher has allowed |
+   | strikeouts    | Number   | amount of strikeouts |
+   
 ### Networking
 * Manage Players
 * (Create/POST) Create a new player
