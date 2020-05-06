@@ -25,17 +25,15 @@ class UpdateStatsViewController: UIViewController {
         updateLNLabel.text = updatePlayer["lastName"] as? String
         positionLabel.text = updatePlayer["Position"] as? String
         
-        //Object Id is updatePlayer["ObjectId"]
-        
     }
     
     @IBAction func updateButton(_ sender: Any) {
         
         //For Hits
         let hits: Int? = Int(hitsLabel.text!)
-        let a = updatePlayer["Hits"] as? Int
-        let b = a! + hits!
-        updatePlayer["Hits"] = b
+        let initialHits = updatePlayer["Hits"] as? Int
+        let newHits = initialHits! + hits!
+        updatePlayer["Hits"] = newHits
         
         //For Other Stats
         
