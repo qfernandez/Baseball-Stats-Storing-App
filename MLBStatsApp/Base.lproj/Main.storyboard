@@ -378,12 +378,22 @@
                         <outlet property="avgBarChart" destination="gJ1-RK-pCU" id="eqW-oO-tfJ"/>
                         <outlet property="barChart" destination="uMQ-Hy-7Ga" id="yCM-Cd-llt"/>
                         <outlet property="battingAverageLabel" destination="7Qg-ky-tdu" id="4IU-Vp-8sf"/>
+                        <outlet property="eraBarChart" destination="3Qo-Iy-Orc" id="c9z-gz-edO"/>
+                        <outlet property="eraLabel" destination="v4l-rw-hJF" id="1dD-Dy-MT7"/>
                         <outlet property="firstNameLabel" destination="W8W-6c-c0j" id="efU-YC-t7P"/>
                         <outlet property="hitsLabel" destination="tYI-QP-XU4" id="2wr-RD-Two"/>
+                        <outlet property="homeRunBarChart" destination="2tS-WC-2ev" id="sI5-Tp-XdY"/>
+                        <outlet property="homeRunLabel" destination="444-mi-yIm" id="uzL-gk-aJV"/>
                         <outlet property="lastNameLabel" destination="ToI-kq-yh7" id="Y5r-dC-qMy"/>
                         <outlet property="positionNameLabel" destination="EJC-0T-ufQ" id="SBk-1J-Mvq"/>
+                        <outlet property="rbiBarChart" destination="Ish-Bp-Dd1" id="o5Q-bP-hhz"/>
+                        <outlet property="rbiLabel" destination="BzS-bC-SrW" id="Xmn-YN-pLe"/>
+                        <outlet property="strikeoutBarChart" destination="vrM-Sh-Ffv" id="Y8l-1u-nti"/>
+                        <outlet property="strikeoutLabel" destination="rTY-ae-1Tz" id="rvg-lE-JHl"/>
                         <outlet property="teamNameLabel" destination="qYt-yr-WJr" id="3Qr-i2-t5C"/>
                         <outlet property="updateButton" destination="4pK-a3-AHS" id="FxX-4e-haG"/>
+                        <outlet property="winsBarChart" destination="K8w-HH-TZw" id="EtU-c8-CuT"/>
+                        <outlet property="winsLabel" destination="FI6-6h-JEa" id="auo-ew-PZd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEW-Gf-Ug4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
