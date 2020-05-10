@@ -15,10 +15,15 @@ class AddPlayerViewController: UIViewController {
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var teamName: UITextField!
     @IBOutlet weak var positionName: UITextField!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +34,15 @@ class AddPlayerViewController: UIViewController {
             player["lastName"] = lastName.text!
             player["Team"] = teamName.text!
             player["Position"] = positionName.text!
+        
+            player["hits"] = 0
+            player["atBats"] = 0
+            player["homeRuns"] = 0
+            player["RBI"] = 0
+            player["Wins"] = 0
+            player["inningsPitched"] = 0
+            player["runsAllowed"] = 0
+            player["strikeouts"] = 0
             
             player.saveInBackground { (success, error) -> Void in
              if success {

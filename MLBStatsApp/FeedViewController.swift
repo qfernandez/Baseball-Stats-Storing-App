@@ -50,7 +50,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.firstNameLabel.text = player["firstName"] as? String
         cell.lastNameLabel.text = player["lastName"] as? String
-        
+        cell.positionLabel.text = player["Position"] as? String
         return cell
     }
 

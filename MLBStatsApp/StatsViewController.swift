@@ -23,10 +23,9 @@ class StatsViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var eraBarChart: BarChartView!
     @IBOutlet weak var strikeoutBarChart: BarChartView!
     
-    
     //Hits
     var currentEntry = BarChartDataEntry(x: 1, y: 365)
-    var otherPlayers = BarChartDataEntry(x: 2, y: 323)
+    var otherPlayers = BarChartDataEntry(x: 2, y: 600)
     
     //Average
     var avgEntry = BarChartDataEntry(x: 1, y: 0.250)
@@ -34,15 +33,15 @@ class StatsViewController: UIViewController, ChartViewDelegate {
     
     //HomeRuns
     var playerHomeRuns = BarChartDataEntry(x: 1, y: 50)
-    var othersHomeRuns = BarChartDataEntry(x: 2, y: 50)
+    var othersHomeRuns = BarChartDataEntry(x: 2, y: 270)
     
     //Runs Batted In
     var playerRBI = BarChartDataEntry(x: 1, y: 50)
-    var othersRBI = BarChartDataEntry(x:2, y: 50)
+    var othersRBI = BarChartDataEntry(x:2, y: 450)
     
     //Wins
     var playerWins = BarChartDataEntry(x: 1, y: 50)
-    var otherWins = BarChartDataEntry(x: 2, y: 50)
+    var otherWins = BarChartDataEntry(x: 2, y: 60)
     
     //Earned Run Average
     var playerERA = BarChartDataEntry(x: 1, y: 3.00)
@@ -50,7 +49,7 @@ class StatsViewController: UIViewController, ChartViewDelegate {
     
     //StrikeOuts
     var playerStrikeOuts = BarChartDataEntry(x: 1, y: 200)
-    var otherStrikeOuts = BarChartDataEntry(x: 2, y: 200)
+    var otherStrikeOuts = BarChartDataEntry(x: 2, y: 900)
     
     //Entrys
     var numberOfHits = [BarChartDataEntry]()
@@ -77,7 +76,6 @@ class StatsViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //hitBarChart.delegate = self
         
         //Calculations
         let hits = player["Hits"]
@@ -102,6 +100,20 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         eraLabel.text = "\(roundedEra)"
         strikeoutLabel.text = "\(player["strikeouts"] ?? Int.self)"
         
+//        var i = 1
+//        var query:PFQuery = PFQuery(className: "Players")
+//        query.order(byDescending: "Hits")
+//        query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+//            if let error = error {
+//                // The request failed
+//                print(error.localizedDescription)
+//            } else if let objects = objects {
+//                objects.forEach { (object) in
+//                    print(i + object["column"])
+//                i+=1
+//                }
+//            }
+//        }
         
         //BarChart Stuff
         currentEntry = BarChartDataEntry(x: 1, y: hits as! Double)
@@ -112,6 +124,7 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         playerERA = BarChartDataEntry(x: 1, y: roundedEra)
         playerStrikeOuts = BarChartDataEntry(x: 1, y: player["strikeouts"] as! Double)
         
+        //Chart Inputs
         numberOfHits = [currentEntry, otherPlayers]
         battingAVGNumber = [avgEntry, avgOthers]
         numberOfHomeRuns = [playerHomeRuns, othersHomeRuns]
@@ -120,6 +133,7 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         eraNumber = [playerERA, otherERA]
         strikeoutNumber = [playerStrikeOuts, otherStrikeOuts]
         
+        //Chart functions
         updateHitChart()
         updateAvgChart()
         updateHomeRunChart()
@@ -127,6 +141,15 @@ class StatsViewController: UIViewController, ChartViewDelegate {
         updateWinsChart()
         updateERAChart()
         updateStrikeoutChart()
+        
+        //Set colors for charts
+        barChart.backgroundColor = .white
+        avgBarChart.backgroundColor = .white
+        homeRunBarChart.backgroundColor = .white
+        rbiBarChart.backgroundColor = .white
+        winsBarChart.backgroundColor = .white
+        eraBarChart.backgroundColor = .white
+        strikeoutBarChart.backgroundColor = .white
     }
     
     func updateHitChart() {

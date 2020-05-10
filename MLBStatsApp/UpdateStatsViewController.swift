@@ -17,6 +17,13 @@ class UpdateStatsViewController: UIViewController {
     @IBOutlet weak var updateLNLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
     @IBOutlet weak var hitsLabel: UITextField!
+    @IBOutlet weak var atBatsLabel: UITextField!
+    @IBOutlet weak var homeRunLabel: UITextField!
+    @IBOutlet weak var rbiLabel: UITextField!
+    @IBOutlet weak var winsLabel: UITextField!
+    @IBOutlet weak var ipLabel: UITextField!
+    @IBOutlet weak var runsAllowedLabel: UITextField!
+    @IBOutlet weak var strikeoutLabel: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +42,47 @@ class UpdateStatsViewController: UIViewController {
         let newHits = initialHits! + hits!
         updatePlayer["Hits"] = newHits
         
-        //For Other Stats
+        //For atBats
+        let atBats: Int? = Int(atBatsLabel.text!)
+        let initialAB = updatePlayer["atBats"] as? Int
+        let newAB = initialAB! + atBats!
+        updatePlayer["atBats"] = newAB
+        
+        //For Homeruns
+        let homeruns: Int? = Int(homeRunLabel.text!)
+        let initialHRs = updatePlayer["homeRuns"] as? Int
+        let newHRs = initialHRs! + homeruns!
+        updatePlayer["homeRuns"] = newHRs
+        
+        //For RBIs
+        let rbis: Int? = Int(rbiLabel.text!)
+        let initialRBIs = updatePlayer["RBI"] as? Int
+        let newRBIs = initialRBIs! + rbis!
+        updatePlayer["RBI"] = newRBIs
+        
+        //For Wins
+        let wins: Int? = Int(winsLabel.text!)
+        let initialWins = updatePlayer["Wins"] as? Int
+        let newWins = initialWins! + wins!
+        updatePlayer["Wins"] = newWins
+        
+        //For Innings Pitched
+        let ip: Int? = Int(ipLabel.text!)
+        let initialIP = updatePlayer["inningsPitched"] as? Int
+        let newIP = initialIP! + ip!
+        updatePlayer["inningsPitched"] = newIP
+        
+        //For Runs Allowed
+        let runsAllowed: Int? = Int(runsAllowedLabel.text!)
+        let initialRAs = updatePlayer["runsAllowed"] as? Int
+        let newRAs = initialRAs! + runsAllowed!
+        updatePlayer["runsAllowed"] = newRAs
+        
+        //For Strikeouts Allowed
+        let strikeouts: Int? = Int(strikeoutLabel.text!)
+        let initialSOs = updatePlayer["strikeouts"] as? Int
+        let newSOs = initialSOs! + strikeouts!
+        updatePlayer["strikeouts"] = newSOs
         
         //This just used for letting you know if it went through
         updatePlayer.saveInBackground { (success, error) -> Void in

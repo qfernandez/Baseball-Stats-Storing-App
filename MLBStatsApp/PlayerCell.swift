@@ -14,7 +14,7 @@ class PlayerCell: UITableViewCell {
     
     @IBOutlet weak var lastNameLabel: UILabel!
     
-    @IBOutlet weak var playerButton: UIButton!
+    @IBOutlet weak var positionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
